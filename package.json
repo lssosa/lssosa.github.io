@@ -1,0 +1,55 @@
+{
+  "name": "lssosa-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio de Lucas Sebastian Sosa - Sistemas de Programación",
+  "main": "index.html",
+  "scripts": {
+    "dev": "concurrently \"npm run watch:css\" \"npm run serve:dev\"",
+    "serve:dev": "live-server --port=3000 --open=index.html --watch=index.html,assets --wait=500",
+    "serve": "http-server . -p 3000 -o",
+    "start": "npm run serve",
+    "watch:css": "nodemon --watch assets/css --ext css --exec \"echo CSS changes detected\"",
+    "build": "npm run minify:css && npm run minify:js",
+    "minify:css": "cleancss -o assets/css/style.min.css assets/css/style.css",
+    "minify:js": "terser assets/js/main.js -o assets/js/main.min.js --compress --mangle",
+    "validate": "html-validate index.html",
+    "lighthouse": "lighthouse http://localhost:3000 --output=html --output-path=./lighthouse-report.html",
+    "deploy": "gh-pages -d .",
+    "clean": "rimraf assets/css/*.min.css assets/js/*.min.js lighthouse-report.html"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "http-server": "^14.1.1",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2",
+    "clean-css-cli": "^5.6.2",
+    "terser": "^5.24.0",
+    "html-validate": "^8.7.4",
+    "lighthouse": "^11.4.0",
+    "gh-pages": "^6.1.0",
+    "rimraf": "^5.0.5"
+  },
+  "keywords": [
+    "portfolio",
+    "github-pages",
+    "sistemas-programacion",
+    "frontend",
+    "javascript"
+  ],
+  "author": {
+    "name": "Lucas Sebastian Sosa",
+    "email": "sosalucas87@gmail.com",
+    "url": "https://lssosa.github.io"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lssosa/lssosa.github.io.git"
+  },
+  "homepage": "https://lssosa.github.io",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

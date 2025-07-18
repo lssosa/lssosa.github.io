@@ -1,0 +1,17 @@
+{
+  "watch": [
+    "index.html",
+    "assets/css/",
+    "assets/js/",
+    "assets/images/"
+  ],
+  "ext": "html,css,js,png,jpg,jpeg,gif,svg",
+  "ignore": [
+    "node_modules/",
+    "*.min.css",
+    "*.min.js",
+    "lighthouse-report.html"
+  ],
+  "exec": "echo 'Files changed, live-server will reload automatically'",
+  "delay": 500
+}

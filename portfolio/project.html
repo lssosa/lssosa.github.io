@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Proyecto - Lucas Sebastian Sosa</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <link href="../assets/css/project-page.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>Lucas Sebastian Sosa</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html#home" class="nav-link" data-translate="nav-home">Inicio</a></li>
+                <li><a href="../index.html#about" class="nav-link" data-translate="nav-about">Sobre Mí</a></li>
+                <li><a href="../index.html#skills" class="nav-link" data-translate="nav-skills">Skills</a></li>
+                <li><a href="../index.html#projects" class="nav-link active" data-translate="nav-projects">Proyectos</a></li>
+                <li><a href="../index.html#contact" class="nav-link" data-translate="nav-contact">Contacto</a></li>
+                <li class="language-switcher">
+                    <button id="langToggle" class="lang-btn">
+                        <i class="fas fa-globe"></i>
+                        <span id="currentLang">ES</span>
+                    </button>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero Section -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="project-breadcrumb">
+                <a href="../index.html#projects" data-translate="breadcrumb-projects">Proyectos</a>
+                <i class="fas fa-chevron-right"></i>
+                <span id="projectBreadcrumbTitle">Cargando...</span>
+            </div>
+            <div class="project-header">
+                <div class="project-info">
+                    <h1 id="projectTitle">Cargando...</h1>
+                    <p class="project-category" data-translate="project-category">Sistema de Gestión</p>
+                    <div class="project-tech-stack" id="projectTechStack">
+                        <!-- Technologies will be loaded dynamically -->
+                    </div>
+                </div>
+                <div class="project-actions">
+                    <a href="#demo-video" class="btn btn-primary" id="demoButton">
+                        <i class="fas fa-play"></i>
+                        <span data-translate="btn-demo">Ver Demo</span>
+                    </a>
+                    <a href="../index.html#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        <span data-translate="btn-contact">Contactar</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery Section -->
+    <section class="project-gallery-section">
+        <div class="container">
+            <h2 data-translate="gallery-title">Galería de Screenshots</h2>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Demo Video Section -->
+    <section id="demo-video" class="project-video-section">
+        <div class="container">
+            <h2 data-translate="demo-title">Demo en Acción</h2>
+            <div class="video-container">
+                <video id="projectVideo" controls>
+                    <source id="videoSource" src="" type="video/webm">
+                    <p data-translate="video-not-supported">Tu navegador no soporta el elemento video.</p>
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details Section -->
+    <section class="project-details-section">
+        <div class="container">
+            <div class="details-grid">
+                <div class="project-description">
+                    <h2 data-translate="description-title">Descripción del Proyecto</h2>
+                    <div class="description-content">
+                        <p id="projectDescription">
+                            <!-- Description will be loaded dynamically -->
+                        </p>
+                        
+                        <h3 data-translate="features-title">Características Principales</h3>
+                        <ul class="features-list" id="featuresList">
+                            <!-- Features will be loaded dynamically -->
+                        </ul>
+
+                        <h3 data-translate="technical-title">Aspectos Técnicos</h3>
+                        <p id="technicalDescription">
+                            <!-- Technical description will be loaded dynamically -->
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-specs">
+                    <h2 data-translate="specs-title">Especificaciones</h2>
+                    <div class="specs-list">
+                        <div class="spec-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div class="spec-content">
+                                <h4 data-translate="spec-duration">Duración del Proyecto</h4>
+                                <p id="specDuration">-</p>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-users"></i>
+                            <div class="spec-content">
+                                <h4 data-translate="spec-team">Equipo</h4>
+                                <p id="specTeam">-</p>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-code"></i>
+                            <div class="spec-content">
+                                <h4 data-translate="spec-frontend">Frontend</h4>
+                                <p id="specFrontend">-</p>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-server"></i>
+                            <div class="spec-content">
+                                <h4 data-translate="spec-backend">Backend</h4>
+                                <p id="specBackend">-</p>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div class="spec-content">
+                                <h4 data-translate="spec-responsive">Compatibilidad</h4>
+                                <p data-translate="spec-responsive-value">Desktop, Tablet, Mobile</p>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div class="spec-content">
+                                <h4 data-translate="spec-security">Seguridad</h4>
+                                <p id="specSecurity">-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Projects Section -->
+    <section class="related-projects-section">
+        <div class="container">
+            <h2 data-translate="related-title">Proyectos Relacionados</h2>
+            <div class="related-grid" id="relatedProjectsGrid">
+                <!-- Related projects will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-translate="cta-title">¿Te Interesa un Proyecto Similar?</h2>
+                <p data-translate="cta-description">
+                    Puedo desarrollar una solución personalizada para tu empresa. Conversemos sobre tus necesidades específicas.
+                </p>
+                <div class="cta-buttons">
+                    <a id="whatsappCTA" target="_blank" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-translate="cta-whatsapp">Hablar por WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-translate="footer-text">&copy; 2024 Lucas Sebastian Sosa. Desarrollando el futuro, un proyecto a la vez.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/projects-data.js"></script>
+    <script src="../assets/js/translations.js"></script>
+    <script src="../assets/js/dynamic-project-page.js"></script>
+</body>
+</html>
